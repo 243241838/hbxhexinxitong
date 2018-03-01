@@ -471,7 +471,6 @@ export default {
 
             })
         },
-
         //新增/编辑 保障信息
         addCarProductPrice() {
             this.dialogFormVisible = true;

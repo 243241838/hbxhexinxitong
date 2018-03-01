@@ -1171,7 +1171,6 @@ export default {
         },
         //上传图片事件
         acqImgUrl(params) {
-            console.log(params);
             if ('userInfoData.productLogo' == params[1]) {
                 this.userInfoData.productLogo = params[0];
             } else if ('userInfoData.productAdvantage' == params[1]) {

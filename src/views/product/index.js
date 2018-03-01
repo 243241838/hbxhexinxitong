@@ -13,9 +13,9 @@ import areaService from './areaService';
 import carFindListDetail from './carFindListDetail';
 import carFindEditDetail from './carFindEditDetail';
 import personInsuranceProDetail from './personInsuranceProDetail';
-import findListViewEditDetail from './findListViewEditDetail';
-import findListViewAddDetail from './findListViewAddDetail';
-import carFindAddDetail from './carFindAddDetail';
+import findListViewEdit from './findListViewEdit';
+import findListViewAdd from './findListViewAdd';
+import carFindAdd from './carFindAdd';
 import carInstallment from './carInstallment';
 import carInsurancedetails from './carInsurancedetails';
 import carproductinformation from './carproductinformation';
@@ -128,25 +128,25 @@ module.exports = {
                     }
                 },
                 { 
-                    path:'findListViewEditDetail',
-                    name: 'product_findListViewEditDetail',
-                    component: findListViewEditDetail, 
+                    path:'findListViewEdit',
+                    name: 'product_findListViewEdit',
+                    component: findListViewEdit, 
                     meta: {
                         title: '个险产品编辑'
                     }
                 },
                 { 
-                    path:'findListViewAddDetail',
-                    name: 'product_findListViewAddDetail',
-                    component: findListViewAddDetail, 
+                    path:'findListViewAdd',
+                    name: 'product_findListViewAdd',
+                    component: findListViewAdd, 
                     meta: {
                         title: '个险产品新增'
                     }
                 },
                 { 
-                    path:'carFindAddDetail',
-                    name: 'product_carFindAddDetail',
-                    component: carFindAddDetail, 
+                    path:'carFindAdd',
+                    name: 'product_carFindAdd',
+                    component: carFindAdd, 
                     meta: {
                         title: '车险产品新增'
                     }

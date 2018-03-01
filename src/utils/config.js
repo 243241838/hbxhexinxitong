@@ -1,6 +1,5 @@
 const arr = [
     // {customerDetail: 'customerList'},
-    {customerDetail: 'lisy'}
 
     //交易管理
     {orderDetail: 'orderManage'},

@@ -22,9 +22,9 @@ import areaService from '@src/views/product/areaService';//地区维护
 import carFindListDetail from '@src/views/product/carFindListDetail';//车险产品详情
 import carFindEditDetail from '@src/views/product/carFindEditDetail';//车险产品编辑
 import personInsuranceProDetail from '@src/views/product/personInsuranceProDetail';//个险产品详情
-import findListViewEditDetail from '@src/views/product/findListViewEditDetail';//个险产品编辑
-import findListViewAddDetail from '@src/views/product/findListViewAddDetail';//个险产品新增
-import carFindAddDetail from '@src/views/product/carFindAddDetail';//车险产品新增
+import findListViewEdit from '@src/views/product/findListViewEdit';//个险产品编辑
+import findListViewAdd from '@src/views/product/findListViewAdd';//个险产品新增
+import carFindAdd from '@src/views/product/carFindAdd';//车险产品新增
 import carInstallment from '@src/views/product/carInstallment';//车险分期产品管理
 import carInsurancedetails from '@src/views/product/carInsurancedetails';//车险分期产品管理详情
 import carproductinformation from '@src/views/product/carproductinformation';//车险分期产品基本详情
@@ -156,9 +156,9 @@ export {
     carFindListDetail,
     carFindEditDetail,
     personInsuranceProDetail,
-    findListViewEditDetail,
-    findListViewAddDetail,
-    carFindAddDetail,
+    findListViewEdit,
+    findListViewAdd,
+    carFindAdd,
     caraddDetail,
     carInstallment,
     carInsurancedetails,

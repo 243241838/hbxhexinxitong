@@ -178,25 +178,20 @@ import { parseTime } from '@filters/index.js';
 export default {
     data() {
         return {
-            listQuery: { params: { url: 'product/productDetail', productId: '' } },
+            listQuery: { params: { url: 'product/productDetail', productId: this.$route.query.productId ? this.$route.query.productId : null } },
             dataList: [],
             productPlansList: [],
             productPricesList: []
         }
     },
-    mounted() {
-    },
     created() {
         this.getApplyList();
-        //this.listQuery.params.productId = this.$route.query.productId;
     },
     computed: {
     },
     methods: {
         /*获取详情信息*/
         getApplyList() {
-            console.log(this.$route.query.productId);
-            this.listQuery.params.productId = this.$route.query.productId;
             config(this.listQuery.params).then(response => {
                 if (response.respCode === '000000') {
                     this.dataList = response.data.productPo;

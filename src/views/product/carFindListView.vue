@@ -181,7 +181,7 @@ export default {
         },
         //前往新增页面
         goNewAdd() {
-            this.$router.push({path:'/product/carFindAddDetail'});
+            this.$router.push({path:'/product/carFindAdd'});
         }
     },
     filters: {

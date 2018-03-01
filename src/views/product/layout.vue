@@ -68,17 +68,17 @@ export default {
               hidden:true
             },
             {
-              hash:'/product/findListViewEditDetail',              
+              hash:'/product/findListViewEdit',              
               nameTwo: '个险产品编辑',
               hidden:true
             },
             {
-              hash:'/product/findListViewAddDetail',              
+              hash:'/product/findListViewAdd',              
               nameTwo: '个险产品新增',
               hidden:true
             },
             {
-              hash:'/product/carFindAddDetail',              
+              hash:'/product/carFindAdd',              
               nameTwo: '车险产品新增',
               hidden:true
             },

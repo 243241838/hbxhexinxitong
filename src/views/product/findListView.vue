@@ -325,11 +325,11 @@ export default {
         },
         //前往编辑页面
         Edit(productId) {
-            this.$router.push({path:'/product/findListViewEditDetail',query:{productId: productId}});
+            this.$router.push({path:'/product/findListViewEdit',query:{productId: productId}});
         },
         //前往编辑页面
         goNewAdd() {
-            this.$router.push({path:'/product/findListViewAddDetail'});
+            this.$router.push({path:'/product/findListViewAdd'});
         },
         //表格默认事件
         handleCurrentChange(val) {
