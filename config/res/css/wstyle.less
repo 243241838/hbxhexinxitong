@@ -1,0 +1,314 @@
+@import './base.less';
+body {
+  font: 16px;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height:74px;
+    background: #2dce8f;
+    z-index: 1000;
+}
+.header .logo{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    line-height: 74px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-left:10px;
+    width:200px;
+    font-weight: 100;
+}
+.shy-menu-item{
+    background: #2dce8f;
+    height:74px;
+    color: #fff;
+    line-height: 74px;
+    font-size: 18px;
+}
+.shy-menu-item a{
+    height:74px;
+    color: #fff;
+    line-height: 74px;
+    font-size: 18px;
+}
+// .el-menu--horizontal:hover{
+//     color: #fff;
+//     background: #1ebd7d;
+// }
+// .shy-menu-item:hover{
+//     color: #fff;
+//     background: #1ebd7d;
+// }
+// .shy-menu-item a:hover{
+//     color: #fff;
+//     background: #1ebd7d;
+// }
+.el-menu-item.is-active {
+    background: #1ebd7d;
+    color: #fff;
+}
+.el-menu--horizontal .el-menu-item:hover{
+    background: #1ebd7d;
+    color: #fff;
+}
+// .shy-menu-item :hover{
+//     background: #1ebd7d;
+//     height:74px;
+//     color: #fff;
+// }
+// .shy-menu-item .sourceTree:hover{
+//     background: #1ebd7d;
+//     color: #fff;
+// }
+// .el-menu--horizontal .is-active{
+//     background: #1ebd7d;
+// }
+// .el-menu--horizontal .el-menu-item a{
+//     color: #fff;
+// }
+.header .rightBox{
+    float: right;
+    height: 100%;
+    font-size: 16px;   
+    color:#fff; 
+}
+.header .rightBox .right{
+    float: left;
+    height: 60px;
+    border-right:1px solid #45464C;   
+    padding:27px 20px; 
+    box-sizing: border-box;
+}
+.header .rightBox .right:nth-last-of-type(1){
+    border: none;
+}
+.header .rightBox img{
+     overflow: hidden;
+}
+.header .rightBox li span{
+    padding: 2px 5px;
+    border-radius: 2px;
+    float: right;
+}
+.header .rightBox li span.col1{
+    background-color: #489de6;
+}
+.header .rightBox li span.col2{ 
+    background-color: red;
+}
+.header .searchBox img{
+     height:25px;
+     width:25px;
+}
+.header .labelTag{
+    float: left;
+    line-height: 60px; 
+    width: 100px;
+    font-size: 16px; 
+    color: #FFFFFF;
+    font-weight: 100;
+    background-color: black;
+    text-align: center;
+}
+.header .labelTag a:hover{
+    color:black;
+}
+.header .newsBox img{
+     height:25px;
+     width:24px;
+}
+.header .newsBox span{
+    float:right;
+    background: #FFC400;
+    border-radius: 2px;
+    width:22px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    margin-left:8px;
+}
+
+.header .usersBox span:nth-of-type(1){
+    float:left; 
+    line-height: 24px;  
+}
+.header .usersBox span:nth-of-type(2){
+    float:left; 
+    margin-top:8px;
+    margin-left:8px;    
+    width: 0;
+    height: 0;
+    border-top: 6px solid #ffffff; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+
+.leftNav{
+    position: absolute;
+    z-index: 999;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top:74px;
+    width: 177px;
+    height: 100%;
+    background-color: #f3f5f6;
+    color: #768399;
+}
+.rightCon{
+    position: absolute;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding:74px 0 0 177px;
+    width:100%;
+    height:100%;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.leftNav .item{
+    display: block;
+    margin:13px auto;
+    width:25px;
+    height:19px;
+}
+.leftNav .listBox{
+    overflow: auto;
+    height: 100%;
+}
+.leftNav .listBox .list div:first-child{
+    // border-bottom: 2px solid #333;
+}
+.leftNav .listBox .list ul.listBoxTwo li.listTwo a.router-link-active span{
+    color: #36abff;
+    font-size: 16px;
+}
+.leftNav .listBox .list ul.listBoxTwo li.listTwo a.router-link-active{
+    color: #36abff;
+    font-size: 16px;
+    border-top: 1px solid #e7e7e2;
+    border-bottom: 1px solid #e7e7e2;
+    border-left: 4px solid #3498da;
+}
+.leftNav .list>div {
+  overflow: hidden;
+  height: 48px; 
+}
+.leftNav .list .activeDiv{
+
+}
+.leftNav .list span {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #768399;
+  letter-spacing: -0.26px;
+  line-height: 48px;
+  padding-left: 10px;
+}
+
+// .leftNav .list>div img:nth-of-type(1) {
+//   margin-top: 15px;
+//   margin-left: 20px;
+//   margin-right: 10px;
+//   float: left;
+//   width: 18px;
+//   height: 18px;
+// }
+
+.leftNav .list>div img:nth-of-type(1) {
+  margin-top: 19px;
+  margin-right: 12px;
+  float: right;
+  width: 17px;
+  height: 10px;
+}
+
+.leftNav .listTwo{
+  background-color: #fff;
+  font-size: 12px;
+  text-indent: 26px;
+}
+.listTwo{
+    background:#777;
+}
+// main区域-Tab选项卡
+
+@d-tab-height: 35px; 
+.d-tab{
+    border: 1px solid red;
+    height: @d-tab-height;
+    line-height: @d-tab-height;
+}
+.mainContent{
+    position: fixed;
+    top:60px;
+    bottom:0;
+    left:200px;
+    right:0; 
+} 
+.mainContent .tapBox{
+    height:40px;
+    background:#f2f2f2;
+}
+.mainContent .tapBox ul li{ 
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    // position: relative;
+    line-height: 40px;
+    min-width: 65px;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.mainContent .tapBox ul li.liActive{
+    background-color: #fff;
+}
+.mainContent .tapBox ul li.liActive i{ 
+    // position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    margin-left: 8px;
+    top: 1px;
+    text-align: center;
+    font-size: 14px;
+    color: #c2c2c2;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.mainContent .breadcrumb{  
+    height: 40px;  
+    padding-left:15px;
+    background:#f5f5f5;
+    border-bottom:1px solid #e6e6e6;
+}
+.mainContent .breadcrumb a{ 
+    font-size: 14px;  
+    line-height: 40px; 
+    padding: 0 5px 0 0px;
+    text-align: center; 
+    color:#333;
+}
+.mainContent .breadcrumb a span{  
+    padding-left: 8px;
+}
+
+.mainContent .w-main{
+    padding:15px;
+}
+.pagination-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+

@@ -1,0 +1,211 @@
+@import '../base.less';
+@import '../amendElement.less';
+
+@labelwidth:80px;
+//
+@inputHeight:38px;
+// 按钮、文本框border颜色
+@grayColor: #BEC3C7;
+@color: #58B99D;
+@white: #fff;
+// 颜色
+@color1: #1ABC9C; @color1_deep:#16A085;
+
+@color2: #2ECC71; @color2_deep:#27AE60;
+
+@colo3:#3498DB; @color3_deep:#2980B9;
+
+@color4: #9B59B6; @color4_deep:#8E44AD;
+
+@color5: #34495E; @color5_deep: #2C3E50;
+
+@color6: #95A5A6; @color6_deep: #7E8C8D;
+
+@color7: #ECF0F1; @color7_deep: #BDC3C7;
+
+@color8: #E74C3C; @color8_deep: #C0392B;
+
+@color9: #E67E22; @color9_deep: #D35400;
+
+@color10: #F1C40F; @color10_deep: #F39C12;
+
+.www-clearfix{
+    zoom: 1;
+}
+.www-clearfix:after{
+    content:"."; display:block; height:0; visibility:hidden; clear:both;
+}
+// 页
+.www-page{
+    font-size:14px;
+    padding:12px;
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.www-table-box{
+    width:100%;
+    overflow-x: auto;
+}
+.www-form{
+    padding: 10px 0;
+}
+.www-input-block, .www-input-inline{ padding-bottom: 10px; }
+.www-input-block{ display: block; }
+.www-input-inline{ display: inline-block; margin-right: 80px; }
+// 默认input框的样式
+.www-input{
+    display: inline-block;
+    line-height: @inputHeight;
+    height: @inputHeight;
+    width:200px;
+    outline: none;
+    background: @white;
+    border:2px solid @grayColor;
+    border-radius: 6px;
+    color: @color5;
+    padding:0 13px;
+}
+.www-input-active{
+    border:2px solid @color;
+}
+.www-input-alert{
+    border:2px solid @color8;
+    color: @color8;
+    &::-webkit-input-placeholder{
+        color:@color8 !important;
+    }
+    &:-moz-placeholder{
+        color:@color8 !important;
+    }
+    &::-moz-placeholder{
+        color:@color8 !important;
+    }
+    &:-ms-input-placeholder{
+        color:@color8 !important;
+    }
+}
+
+.www-input .www-input-small{
+
+}
+.www-input .www-input-normal{
+
+}
+.www-input .www-input-big{
+
+}
+.www-label{
+    width: @labelwidth;
+    color: @color5;
+    display: inline-block;
+    line-height: 32px;
+    font-size:14px;
+}
+.www-label-small{
+    width: @labelwidth - 20px;
+}
+.www-label-normal{
+    width: @labelwidth;
+}
+.www-label-big{
+    width:@labelwidth+20px;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+.www-select{
+    width: 130px;
+    line-height: @inputHeight - 4px;
+    height: @inputHeight - 4px;
+    // appearance:none;
+    // -moz-appearance:none;
+    // -webkit-appearance:none;
+    //在选择框的最右侧中间显示小箭头图片
+    // background: url(http://ourjs.github.io/static/2015/arrow.png) no-repeat scroll right center transparent;
+    border: 0;
+    background: #1ABC9C;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 10px;
+    &:focus{
+        color:#000;
+    }
+}
+
+.www-button{
+    height: 30px;
+    width:60px;
+    line-height: 30px;
+    text-align: center;
+    outline: none;
+    border:0;
+    color: #000;
+    &:hover{
+        background: red;
+        cursor: pointer;
+    }
+}
+.www-button-big{
+    width:80px;
+}
+
+.www-table{
+    width:100%;
+}
+.www-table table{
+    width:100%;
+}
+.www-table table th{
+   text-align: center; 
+}
+.www-table table td{
+    text-align: center;
+}
+
+.www-hover-blue{
+    color:blue;
+    cursor: pointer;
+}
+
+.www-el-label-text{
+    display:inline-block;
+    width:100px !important;
+    color:#333;
+}
+.www-el-label-input{
+    width:400px !important;
+    margin-bottom:10px;
+    text-align: right;
+    &.big{
+        input{
+            width:600px;
+        }
+    }
+}
+.www-img-box{
+    float:left;margin-right:20px;height:400px;
+}
+.www-img-text{
+    text-align:center;line-height:40px;
+}
+.www-img-content{
+    height:360px;
+}
+// 表格里面的el-button
+.el-table{
+    table{
+        tr{
+            td{
+                .cell{
+                    padding:0;
+                }
+            }
+        }
+    }
+}
+.www-el-success{
+    color: #13ce66 !important;
+    border-color: #13ce66 !important;
+}

@@ -1,0 +1,86 @@
+.ggg_user{
+    min-width: 1200px;
+    padding: 10px 10px 0 10px;
+    background: #fff;
+    height:100%;
+    overflow-y:auto;  
+    table{
+        min-width:1200px;
+    }
+    .filter-container{
+            margin-top: 20px;
+    }
+     //form表单 无边框
+    .noborder{
+        .el-input__inner{
+            border:0!important;
+        }
+    }
+    .font_bold{
+        font-weight:bold;
+    }
+    .autoAlert{
+        .el-dialog{
+            &.el-dialog--small{
+                min-width:300px;
+                max-width:430px;
+                
+            }
+        }
+    }
+    .fl{
+        float: left;
+    }
+    .margin_bottom{
+        margin-bottom:20px!important;
+    }
+    //分配资源 表格
+    .tableDiv{
+        width:auto;
+        height:auto;
+        overflow: hidden;
+        border: 1px solid #b7b7b7;
+        border-bottom:0;
+        .tr1{
+            overflow: hidden;
+            border-bottom: 1px solid #b7b7b7;
+            >.name{
+                width:130px;
+                text-align: center;
+            }
+            .one,.two,.three,.four,.five{
+                >div{
+                    overflow: hidden;
+                    >div:first-child{
+                         min-width:150px;
+                        padding:10px;
+                    } 
+                }
+            }
+            .one,.two,.three,.four,.five{
+                >div{
+                    width:100%;
+                    border: 1px solid #b7b7b7;
+                    border-top:0;
+                    border-right:0;
+                    >.border{
+                        border-right:1px solid #b7b7b7;
+                    }
+                }
+                >div:last-child{
+                    border-bottom:0;
+                }
+            }
+            .one{
+                >div{
+                    // border-right: 1px solid #b7b7b7;
+                }
+            }
+        }
+    }
+    .userTable td input{
+        text-align: center;
+    }
+
+}
+
